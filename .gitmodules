@@ -1,0 +1,3 @@
+[submodule "helperTools"]
+	path = helperTools
+	url = https://github.com/orlandi/helperTools
