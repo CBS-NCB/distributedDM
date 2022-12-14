@@ -1,8 +1,9 @@
+% CD to this folder
+addpath(genpath(fullfile(pwd,'helperFunctions')));
+
 %%
 clearvars;
-load('figs6.mat');
-
-%% Plotting the projections
+load('data/figs6.mat');
 
 hFig = createCenteredFigure('width', 21, 'height', 5);
 p = panel();

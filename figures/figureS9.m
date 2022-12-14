@@ -1,12 +1,17 @@
-clearvars;
-load('figs9.mat');
+% CD to this folder
+addpath(genpath(fullfile(pwd,'helperFunctions')));
+
 %%
+clearvars;
+load('data/figs9.mat');
+
+
 regionNames = {'V1', 'PM', 'AM', 'A', 'SSt', 'RL', 'SSb', 'AL', 'L', 'RS'};
 XPositionsOrig = [ 1     3     5     6     8     9    10    12    14    15    17];
 regionColor = [2     3     3     4     4     4     5     6     6     7];
 regionOrder = [1     2     3     4     6     8     9     5     7    10];
 regionPosition = [3 5 6 8 9 10 12 14 15 17]; % In the new order
-regionPosition
+
 hFig = createCenteredFigure('width', 21, 'height', 27);
 p = panel();
 p.margin = 10;

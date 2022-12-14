@@ -1,8 +1,10 @@
+% CD to this folder
+addpath(genpath(fullfile(pwd,'helperFunctions')));
+
+%%
 clearvars;
-load('figs8.mat');
+load('data/figs8.mat');
 
-
-%% A
 
 hFig = createCenteredFigure('width', 6, 'height', 5);
 nu = 87.12;
@@ -22,8 +24,6 @@ offsetAxes();
 spaceOutAxes();
 
 
-%% B
-
 hFig = createCenteredFigure('width', 6, 'height', 5);
 
 nur =  0.0022;
@@ -40,7 +40,6 @@ set(findall(hFig,'-property','FontName'),'FontName', 'Arial');
 set(findall(hFig,'-property','FontSize'),'FontSize', 8);
 offsetAxes();
 spaceOutAxes();
-%% C
 
 hFig = createCenteredFigure('width', 6, 'height', 5);
 

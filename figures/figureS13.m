@@ -1,8 +1,10 @@
-%% 
-clearvars
+% CD to this folder
+addpath(genpath(fullfile(pwd,'helperFunctions')));
 
-%% A
-load('figs13a.mat')
+%% PANEL A
+clearvars;
+load('data/figs13a.mat');
+
 hFig = createCenteredFigure('width', 6, 'height', 5);
 
 [xPositions, yPositions, Label, RangeCut, hList] = UnivarScatterV2(data, 'Compression', 10, 'PointSize', 16);
@@ -15,8 +17,9 @@ ylabel('d''');
 set(findall(hFig,'-property','FontName'),'FontName', 'Arial');
 set(findall(hFig,'-property','FontSize'),'FontSize', 8);
 
-%% B
-load('figs13b.mat')
+%% PANEL B
+clearvars;
+load('data/figs13b.mat');
 hFig = createCenteredFigure('width', 6, 'height', 5);
 
 [xPositions, yPositions, Label, RangeCut, hList] = UnivarScatterV2(data, 'Compression', 10, 'PointSize', 16);
@@ -33,8 +36,9 @@ offsetAxes();
 spaceOutAxes();
 
 
-%%
-load('figs13c.mat')
+%% PANEL C
+clearvars;
+load('data/figs13c.mat');
 hFig = createCenteredFigure('width', 6, 'height', 5);
 
 [xPositions, yPositions, Label, RangeCut, hList] = UnivarScatterV2(data, 'Compression', 10, 'PointSize', 16);

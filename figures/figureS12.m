@@ -1,7 +1,9 @@
+% CD to this folder
+addpath(genpath(fullfile(pwd,'helperFunctions')));
+
 %%
 clearvars;
-load('figs12.mat');
-%% The figure plot
+load('data/figs12.mat');
 
 hFig = createCenteredFigure('width', 21, 'height', 5);
 p = panel();

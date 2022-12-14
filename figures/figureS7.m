@@ -1,6 +1,9 @@
-clearvars;
-load('figs7.mat');
+% CD to this folder
+addpath(genpath(fullfile(pwd,'helperFunctions')));
+
 %%
+clearvars;
+load('data/figs7.mat');
 
 hFig = createCenteredFigure('width', 21, 'height', 6);
 p = panel();

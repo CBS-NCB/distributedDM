@@ -1,7 +1,9 @@
-clearvars;
-load('figs3.mat');
+% CD to this folder
+addpath(genpath(fullfile(pwd,'helperFunctions')));
 
 %%
+clearvars;
+load('data/figs3.mat');
 
 regionNames = {'V1', 'PM', 'AM', 'A', 'SSt', 'RL', 'SSb', 'AL', 'L', 'RS'};
 XPositionsOrig = [ 1     3     5     6     8     9    10    12    14    15    17];

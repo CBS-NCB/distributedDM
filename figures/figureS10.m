@@ -1,7 +1,11 @@
-clearvars;
-load('figs10.mat');
+% CD to this folder
+addpath(genpath(fullfile(pwd,'helperFunctions')));
 
 %%
+clearvars;
+load('data/figs10.mat');
+
+
 hFig = createCenteredFigure('width', 21, 'height', 27);
 p = panel();
 p.margin = 10;

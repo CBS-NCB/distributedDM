@@ -1,8 +1,10 @@
-clearvars;
-
-load('figs15.mat');
+% CD to this folder
+addpath(genpath(fullfile(pwd,'helperFunctions')));
 
 %%
+clearvars;
+load('data/figs15.mat');
+
 regionNames = {'V1', 'PM', 'AM', 'A', 'SSt', 'RL', 'SSb', 'AL', 'L', 'RS'};
 vectorModes = {'left', 'right'};      
 
